@@ -1,10 +1,11 @@
-package trashbank;
+package trashbank.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-// Kelas untuk mengelola pengguna
-class UserManager {
+import trashbank.model.User;
+
+public class UserManager {
   private List<User> users;
 
   public UserManager() {

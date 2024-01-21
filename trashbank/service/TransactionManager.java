@@ -1,13 +1,14 @@
-package trashbank;
+package trashbank.service;
 
-// Kelas untuk input transaksi
-class TransaksiManager {
+import trashbank.data.impl.TrashTypeImpl;
+
+public class TransactionManager {
     public static final int KERTAS = 1;
     public static final int PLASTIK = 2;
     public static final int LOGAM = 3;
 
     public int inputTransaksi(int jenisBarang, int jumlah) {
-        BankSampah bankSampah = new BankSampah();
+        TrashTypeImpl bankSampah = new TrashTypeImpl();
 
         int harga = 0;
         switch (jenisBarang) {
